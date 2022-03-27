@@ -1,7 +1,7 @@
 {
-  "deviceName": "devicename",
-  "appPackage": "appPackage",
-  "appActivity": "appActivity",
+  "deviceName": "emulator-5554",
+  "appPackage": "com.imdb.mobile",
+  "appActivity": "com.imdb.mobile.HomeActivity",
   "platformName": "Android",
-  "platformVersion": "version"
+  "platformVersion": "12"
 }
