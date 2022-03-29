@@ -21,9 +21,7 @@ public class ConfigCapabilities {
     private static void ApplicationSetUp(DesiredCapabilities capabilities){
         capabilities.setCapability("appPackage", getJsonDataProperty(APP_PACKAGE));
         capabilities.setCapability("appActivity", getJsonDataProperty(APP_ACTIVITY));
-        capabilities.setCapability("platformVersion", getJsonDataProperty(PLATFORM_VERSION));
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, getJsonDataProperty(DEVICE_NAME));
-        capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, getJsonDataProperty(PLATFORM_VERSION));
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, getJsonDataProperty(PLATFORM_NAME));
         capabilities.setCapability("automationName", "UiAutomator2");
     }
@@ -41,8 +39,10 @@ public class ConfigCapabilities {
         return "";
     }
 
-    public DesiredCapabilities GetCapabilities(){
+    public static DesiredCapabilities GetCapabilities(){
+        if(capabilities.toJson().isEmpty()){
             ConfigCapabilities.ApplicationSetUp(capabilities);
+        }
         return capabilities;
     }
 

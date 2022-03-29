@@ -1,0 +1,14 @@
+Core\By.class
+Adapter\Screens\YouScreen.class
+Adapter\Bases\BaseMobileTest.class
+Core\MobileElement.class
+Adapter\Bases\BaseMobileScreen$1.class
+Core\MobileAppDriver.class
+Adapter\Screens\LoginScreen.class
+Adapter\Screens\PopUps.class
+Adapter\Screens\SearchScreen.class
+Adapter\Bases\BaseMobileScreen.class
+Adapter\Screens\WatchlistScreen.class
+Adapter\Screens\MovieScreen.class
+Adapter\Screens\GlobalNavigationScreen.class
+Core\ConfigCapabilities.class

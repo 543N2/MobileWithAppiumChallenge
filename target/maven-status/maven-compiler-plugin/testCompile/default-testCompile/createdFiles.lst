@@ -1,0 +1,4 @@
+Tests\rateMovie.class
+Tests\addMovieToWatchlist.class
+Tests\SearchMovieTest.class
+Tests\MyTest.class
